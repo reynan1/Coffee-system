@@ -1,0 +1,126 @@
+/* Dropdown Button */
+*,
+
+*::before,
+
+*::after { margin:0; padding:0; box-sizing: border-box; }
+
+html {  font-size: 10px;  background-image: url('../img/wooden-bg1.jpg'); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; } 
+
+a { text-decoration: none; }
+
+ul { list-style: none; }
+
+body { font: 15px/1.5 'Poppins',Arial, Helvetica, sans-serif; padding: 0;margin: 0; overflow-x: hidden;  }
+
+header  > .container > #post > #branding  { margin: 0; padding: 0}
+
+header  > .container > #post > #branding > h1{ font-family: 'Alfa Slab One', cursive; font-weight: 300;color: #f4f4f4; margin: 2rem 0px 0px 0px; float: left;}
+
+header > .container > #post >  nav {float: right; border-left: 1px solid #000; margin: 0.1rem 70rem 0px 0px; min-height: 7.90rem; }
+
+header > .container > #post >  nav > ul {margin: 2.8rem 0rem 0rem 0rem} 
+
+header > .container > #post >  nav > ul > li > a {font-family:'Poppins', sans-serif; font-size: 1.6rem; }
+
+header #post { background-color:#372e29; min-height: 100px; border-bottom: 2rem solid #a67041; padding: 0rem 3rem 0rem 2rem; margin-top: 5rem;}
+
+header #post ul{ margin: 0; padding:0; display: flex; flex-direction: wrap; }
+
+header #post li { padding: 0 15px; display: block; }
+
+header #post a { text-decoration: none; color: #fff; }
+
+th,td { padding: 2px 10px 2px 10px;}
+
+tr { transition:all .25s ease-in-out}
+
+tr:hover { background-color:#329932; cursor: pointer}
+
+footer > .container { padding: 0rem 0px 0rem 0rem; border-bottom:#1a1613 5px solid;}
+
+footer > .container >  nav { width:100%; height: 3rem; margin: 5rem 0px 0px 0px; background-color:#1a1613;}
+
+footer > .container >  nav > ul { padding: 0.5rem 3rem 0px  0rem; float: right}
+
+footer > .container >  nav > ul > li { display: inline;}
+
+footer > .container >  nav > ul > li > a {font-family:'Poppins', sans-serif; font-size: 1.6rem; color: #fff; text-decoration: none; text-transform: capitalize; }
+
+#btnEdit {  width: 100px; height: 25px; background-color:#800000; cursor: pointer; color: #fff; font-size: 14px; }
+
+#btnEdit:hover {background-color:#e0301e; height: 25px;  cursor: pointer; color: #fff; padding: 3px 5px 3px 5px; width: 100px;}
+
+#table2 { border-collapse: collapse; width: 100%; margin: auto, auto ,auto, auto}
+
+#table2 > thead > tr > th {   color: #ffff; text-align:center}
+
+#table2 > tbody > tr > td {   color: #ffff; text-align:center}
+
+#table1 { border-collapse: collapse; width: 100% }
+#btn {background-color: #800000; color: #fff; width: 100px; padding: 3px 0px 3px 0px; cursor: pointer}
+
+/*#table1 > tbody >tr > th{}*/
+
+#table1 > tbody >tr > td{text-align: center; }
+
+.table2-design > h2 {color: #fff; margin: -0.5rem 0px 0px 1rem}
+
+.table2-design {background-color: #1a1613; width: 45%;}
+
+.container { width: 85%;  margin: auto; background-color: #63534a;}
+
+.sub-container {width: 95%; margin: auto auto 0rem auto; background-color: #63534a; padding: 2rem 0rem 0rem 0rem;}
+
+.order-area {background-color: #1a1613; width: 45%; margin: 0rem  0px 0px 0rem; padding: 2rem 2rem 2rem 3rem}
+
+.order-area > h3 {color: #fff}
+
+.textfield::-webkit-input-placeholder { color: #fff; }
+
+.dropbtn { width: 150px; border-radius: 5%; background-color: #4CAF50; color: white; padding: 8px; font-size: 16px; border: none; }
+
+.add-btn { width: 70px; margin: 0px 0px 0px 1rem; display: inline ; height: 30px; background-color: #4CAF50; color: #000; border: none; font-weight: bolder; font-family: 'Roboto', sans-serif;}
+
+.add-btn:hover {  background-color: #00D46B; }  
+
+.add-order-table > { color: #fff; width: 30%}
+
+.add-order-table > tbody > tr > th { color: #fff; }
+
+.order-list { width: 45%;background-color: #1a1613; color: #fff; position: absolute; right: 7.7%; top: 21.5%; padding: 20px 2rem 2.6rem 2rem; }
+  
+.text-field-coffee { height: 30px; display: inline; margin: 0px 0px 5px 3px; width: 105px; border-radius: 0.2rem; padding-left: 2rem; border: 0 ;outline: none;}
+
+.text-field-no { width: 40px; height: 30px; display: inline; margin-bottom: 5px; border-radius: 0.2rem; padding-left: 1.5rem; border: 0; outline: none;}
+
+.text-field-price { width: 60px; height: 30px; display: inline; margin: 0px 0px 5px 10px; border-radius: 0.2rem; padding-left: 1.5rem; border: 0; outline: none; }
+
+.text-field-quantity { width: 60px; height: 30px; display: inline; margin: 0px 0px 5px 10px; border-radius: 0.2rem; padding-left: 1.5rem; border: 0; outline: none; }
+
+.order-area > .text-field[type="text"] { background-color: #676145; color: #fff; font-size: 15px; font-weight: 400;}
+
+.order-area > .text-field-quantity[type="text"]{ background-color: #676145; color: #fff; font-size: 15px; font-weight: 400;}
+
+.order-area > .text-field-quantity[type="text"]:focus{ background-color: 	#2d2223; color: #fff; font-size: 15px; font-weight: 400;}
+
+.order-area > .text-field-quantity[type="text"]:hover{ background-color: 	#2d2223; color: #fff; font-size: 15px; font-weight: 400;}
+
+.btn-input { height: 20px;}
+
+.totalValue { background-color: #329932; color: #800000; font-size: 18px; font-family: Arial, Helvetica, sans-serif; font-weight: 600; padding: 3px 5px 3px 5px; }
+
+.clear-btn{ background-color:#800000; cursor: pointer; color: #fff; padding: 3px 5px 3px 5px; width: 100px;  float: right; margin: 0px 0rem 0rem 0rem }
+
+.clear-btn:hover { background-color: #e0301e;}
+
+.purchase-btn {font-size: 13px;background-color: #03396c; cursor: pointer; color: #fff; padding: 3px 5px 3px 5px; float: right; width: 80px;height: 30px; }
+
+.myorder-area-div { background-color: #fff; width: 254px; height: 30px;}
+
+.paid-order{ height: 30px; display: inline; margin-bottom: 5px; width: 150px; border-radius: 0.2rem; padding-left: 2rem; border: 0; outline: none;}
+
+.change-area { min-height: 6rem; background-color: 	#392825; margin: 1rem 0rem 0rem 0rem}
+
+.changeMoney { margin: 0rem 0rem 0rem 0.5rem;color: #fff; font-size: 18px; display: inline;}
+

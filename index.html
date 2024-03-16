@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Piedra&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="./css/main.css" rel="stylesheet">
+        <title>Coffee House</title>
+    </head>
+    <body>
+
+        <header>
+          <div class="container myheader-style">
+            <div id="post">
+              <div id="branding">
+                 <h1>Coffee House</h1>
+              </div>
+              <nav>
+                 <ul>
+                   <li><a href="">Home</a></li>
+                   <li><a href="#">Administrator</a></li>
+                   <li><a href="#">ContactUS</a></li>
+                 </ul>
+              </nav>
+            </div>
+          </div>
+        </header> 
+        
+        <section>
+          <div class="container">
+            <div class="sub-container mysub1">
+              <div class="table2-design">
+                <br>
+              <h2>Coffe Menus</h2>
+                <table  id="table2">
+            
+                  <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Coffee Type</th>
+                        <th>Coffee Name</th>
+                        <th>regular</th>
+                         <th>Quantity</th>
+                    </tr>
+                  </thead>
+            
+                  <tbody>   
+                    <tr>
+                        <td id="text-field1">1</td>
+                        <td id="text-field2">Hot Coffee</td>
+                        <td id="text-field3">Capuccino</td>
+                        <td id="text-field4">15</td>
+                        <td id="text-field5">1</td>
+                      <!-- <td>$18</td> -->
+                    </tr>
+                  </tbody>
+            
+                  <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td id="text-field1">Hot Coffee</td>
+                        <td id="text-field2">Cafe Latte</td>
+                        <td id="text-field3">12</td>
+                        <td id="text-field5">1</td>
+                        <!-- <td id="text-field4">$15</td>  -->
+                    </tr>
+                  </tbody>
+            
+                  <tbody> 
+                    <tr>
+                        <td>3</td>
+                        <td id="text-field1">Hot Coffee</td>
+                        <td id="text-field2">Americano</td>
+                        <td id="text-field3">10</td>
+                        <td id="text-field5" >1</td>
+                        <!-- <td id="text-field4">$12</td> -->
+                    </tr>
+                  </tbody>
+
+                  <tbody> 
+                    <tr>
+                        <td>4</td>
+                        <td id="text-field1">Hot Coffee</td>
+                        <td id="text-field2">Flat White</td>
+                        <td id="text-field3">25</td>
+                        <td id="text-field5">1</td>
+                        <!-- <td id="text-field4">$12</td> -->
+                    </tr>
+                  </tbody>
+
+                  <tbody> 
+                    <tr>
+                        <td>5</td>
+                        <td id="text-field1">Hot Coffee</td>
+                        <td id="text-field2">Macchiato</td>
+                        <td id="text-field3">18</td>
+                        <td id="text-field5">1</td>
+                        <!-- <td id="text-field4">$12</td> -->
+                    </tr>
+                  </tbody>
+            
+                </table>
+                <br>
+              </div>
+            </div>
+          </div>
+        </section>
+       
+        <section>
+         <div class="container">
+           <div class="sub-container mysub1">
+             <div class="order-area">
+              <h3>Add Cofee Order</h3>  
+              <table class="add-order-table">
+                 <tr>
+                  <th>No</th>
+                  <th>Coffee Type</th>
+                  <th>Cofee Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                </tr>  
+              </table>
+              <input type="text" id="pass-textfield1" class="text-field-no text-field"  readonly>
+              <label id="number-order" style="display:none"> **No Number Order is empty or the other all field is empty </label>
+              <input type="text" id="pass-textfield2" class="text-field-coffee text-field"  readonly>
+              <label id="coffee-type" style="display:none"> **No Coffee Type or the other all field is empty </label>
+              <input type="text" id="pass-textfield3" class="text-field-coffee text-field"  readonly>
+              <label id="coffee-name" style="display:none"> **No Coffee Name or the other all field is empty</label>
+              <input type="text" id="pass-textfield4" class="text-field-price text-field"  readonly> 
+              <label id="coffee-price" style="display:none"> **No Coffee Price or the other all field is empty</label>
+              <input type="text" id="pass-textfield5" class="text-field-quantity"  onkeypress="validateInput(event)"  maxlength="3">  
+              <input type="text" id="pass-textfield6" class="text-field-quantity"  style="display:none">  
+              <input type="button" class="add-btn" id="btn-add" onclick="addHtmlTableRow()" value="ADD" readonly>
+             </div>
+           </div> 
+          </div>
+        </section>
+
+        <secion>
+          <div class="container">
+            <div class="sub-container mysub1">
+              <div class="order-area">
+               <h3>Enter The Amount</h3>
+               <div class="myorder-area-div">
+                 <span>&nbsp; &#8369;
+                   <input type="text" onkeypress="validateInput(event)" id="AmountPay" class="paid-order"  maxlength="7" placeholder=" Enter Cash ">
+                 </span> 
+                 <input type="button" value="SUBMIT" id="btn-clr-all" class="purchase-btn" onclick="purchase()">            
+                </div>
+               
+               <div class=" change-area"> 
+                 <span class="changeMoney" > Change:&nbsp;&nbsp; &#8369;
+                   <p id="output" class="changeMoney" >0</p>
+                </span>
+                </div>
+              </div>
+            </div> 
+           </div>
+        </secion>
+
+        <section>
+          <div class="container">
+            <div class="sub-container">
+              
+              <div class="order-list"> 
+                <h2>Cofee Order List</h2>   
+                <table id="table1">
+                    <tr>
+                      <th>No</th>        
+                      <th>Coffee Type</th>          
+                      <th>Coffee Name</th>             
+                      <th>Price</th>  
+                      <th>Quantity</th>
+                      <th style="display:visible">Total</th>
+                      <th>Conditional</th>  
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <input type="button" value="CLEAR ALL" id="btn-clr-all" class="clear-btn" onclick="clearAll()">    
+                <br>
+                <br>
+                <span><p id="total" ></p></span>  
+              </div>
+            </div>  
+          </div>
+        </section> 
+
+        <section>
+          <div>
+            
+          </div>
+        </section>
+
+
+          <footer>
+            <div class="container ">
+              <div class="sub-container s-footer">
+                
+              </div>
+             <nav>
+                <ul>
+                  <li><a href="href">coffeehouse.com</a></li>
+                </ul>
+             </nav>
+            </div>
+          </footer>
+       
+        <script src="./app.js"></script>
+    </body>
+</html>
